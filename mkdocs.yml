@@ -1,0 +1,117 @@
+site_name: "Stages: A React Native & TypeScript Path"
+site_description: "A companion to the Mobile App Scripting manual — a 24-Stage, project-based path through React Native and TypeScript, built around one continuous application."
+site_author: "Jessel Sookha"
+site_url: "https://jesselsookha.github.io/stages-rn-ts-path/"
+
+repo_name: "jesselsookha/stages-rn-ts-path"
+repo_url: "https://github.com/jesselsookha/stages-rn-ts-path"
+edit_uri: "edit/main/docs/"
+
+copyright: "Copyright &copy; 2026 Jessel Sookha"
+
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Inter
+    code: Fira Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jesselsookha
+  generator: false
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: docs/includes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Welcome: index.md
+  - Part I – Foundations:
+      - part-1-foundations/stage-01-react-native-origins.md
+      - part-1-foundations/stage-02-environment-setup.md
+  - Part II – TypeScript Essentials:
+      - part-2-typescript-essentials/stage-03-programming-basics-in-typescript.md
+      - part-2-typescript-essentials/stage-04-logical-structures-and-data-handling.md
+      - part-2-typescript-essentials/stage-05-advanced-typescript-features.md
+  - Part III – Core RN Programming:
+      - part-3-core-rn-programming/stage-06-basic-components-and-layout.md
+      - part-3-core-rn-programming/stage-07-app-navigation.md
+      - part-3-core-rn-programming/stage-08-decisions-and-conditional-rendering.md
+      - part-3-core-rn-programming/stage-09-data-structures-arrays.md
+      - part-3-core-rn-programming/stage-10-refactoring-and-structure.md
+      - part-3-core-rn-programming/stage-11-completion-and-scoreboard.md
+  - Part IV – Expanding Core Concepts:
+      - part-4-expanding-core-concepts/stage-12-state-and-effects.md
+      - part-4-expanding-core-concepts/stage-13-context-and-settings.md
+      - part-4-expanding-core-concepts/stage-14-data-persistence-and-networking.md
+  - Part V – Enhancements:
+      - part-5-enhancements/stage-15-animations-and-gestures.md
+      - part-5-enhancements/stage-16-fonts-and-styling.md
+      - part-5-enhancements/stage-17-state-management-beyond-usestate.md
+      - part-5-enhancements/stage-18-file-handling-and-crud.md
+      - part-5-enhancements/stage-19-firebase-integration-optional.md
+      - part-5-enhancements/stage-20-deployment-and-testing.md
+  - Part VI – Extensions:
+      - part-6-extensions/stage-21-extending-the-xo-game.md
+      - part-6-extensions/stage-22-alternative-apps-tasks.md
+      - part-6-extensions/stage-23-github-workflow.md
+      - part-6-extensions/stage-24-ice-tasks-and-homework.md
+  - References: references.md
